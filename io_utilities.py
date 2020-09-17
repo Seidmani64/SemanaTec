@@ -28,8 +28,8 @@ if __name__ == "__main__":
 
     df['sl+pl'] = df['sepal_length'] + df['petal_length']
 
-    print(df.head())
+    df1 = df[['sepal_width','petal_length', 'sl+pl','class']]
 
-    df_filtered = df[df['sepal_length']>=5]
+    print(df1)
 
-    print(df_filtered)
+    print(df.describe())
